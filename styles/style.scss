@@ -1,6 +1,7 @@
 $colorTopNavBar: #C1C4CA;
 $colorVstu: #434C63;
 $colorMain: #8A2BE2;
+$colorCopyright: #6B758F;
 
 
 
@@ -10,7 +11,8 @@ $colorMain: #8A2BE2;
 }
 
 html,
-body {
+body,
+p {
   margin: 0;
   padding: 0;
   font-family: 'Roboto';
@@ -178,6 +180,7 @@ footer {
 
       &.padding-0 {
         padding: 0 10%;
+        width: 100%;
       }
 
       .separator {
@@ -185,39 +188,56 @@ footer {
       }
     }
 
-    &.section2 {
+    &.section1 {
       .section-content {
         justify-content: space-between;
+        gap: 0 50px;
+
+        &>div {
+          width: 20%;
+        }
 
         .footer-menu {
           display: flex;
           flex-direction: column;
           font-size: 16px;
+          gap: 20px;
 
           h3 {
             color: #FFFFFF;
           }
         }
+      }
+    }
+
+    &.section2 {
+      .section-content {
+        justify-content: space-between;
+        gap: 0 50px;
 
         &>div {
+          width: 20%;
+        }
+
+        .footer-menu {
           display: flex;
-          flex-wrap: wrap;
-          width: calc(100% - 208px);
+          flex-direction: column;
+          font-size: 16px;
+          gap: 20px;
 
-          &:first-child {
-            //width: 35%;
-            
-            
+          h3 {
+            color: #FFFFFF;
           }
 
-          &:last-child {
-            justify-content: center;
-            //flex-wrap: wrap;
-            gap: 0 20px;
-            width: 208px;
-            font-size: 14px;
-            //white-space: nowrap;
+          a {
+            text-decoration: underline;
           }
+        }
+
+        .copyright {
+          color: $colorCopyright;
+          font-size: 14px;
+          //width: 208px;
         }
       }
     }
@@ -242,12 +262,12 @@ footer {
     &.section4 {
       align-items: center;
       justify-content: center;
-      gap: 30px;
       background: #fff;
       height: 114px;
 
       .section-content {
         flex-wrap: wrap;
+        gap: 0 50px;
 
         img {
           height: 42px;

@@ -3,7 +3,8 @@
   src: url(../fonts/Roboto-Light.ttf);
 }
 html,
-body {
+body,
+p {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -146,30 +147,48 @@ footer section .section-content {
 }
 footer section .section-content.padding-0 {
   padding: 0 10%;
+  width: 100%;
 }
 footer section .section-content .separator {
   width: 100%;
 }
+footer section.section1 .section-content {
+  justify-content: space-between;
+  gap: 0 50px;
+}
+footer section.section1 .section-content > div {
+  width: 20%;
+}
+footer section.section1 .section-content .footer-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 20px;
+}
+footer section.section1 .section-content .footer-menu h3 {
+  color: #FFFFFF;
+}
 footer section.section2 .section-content {
   justify-content: space-between;
+  gap: 0 50px;
+}
+footer section.section2 .section-content > div {
+  width: 20%;
 }
 footer section.section2 .section-content .footer-menu {
   display: flex;
   flex-direction: column;
   font-size: 16px;
+  gap: 20px;
 }
 footer section.section2 .section-content .footer-menu h3 {
   color: #FFFFFF;
 }
-footer section.section2 .section-content > div {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% - 208px);
+footer section.section2 .section-content .footer-menu a {
+  text-decoration: underline;
 }
-footer section.section2 .section-content > div:last-child {
-  justify-content: center;
-  gap: 0 20px;
-  width: 208px;
+footer section.section2 .section-content .copyright {
+  color: #6B758F;
   font-size: 14px;
 }
 footer section.section3 .section-content {
@@ -187,12 +206,12 @@ footer section.section3 .section-content .language {
 footer section.section4 {
   align-items: center;
   justify-content: center;
-  gap: 30px;
   background: #fff;
   height: 114px;
 }
 footer section.section4 .section-content {
   flex-wrap: wrap;
+  gap: 0 50px;
 }
 footer section.section4 .section-content img {
   height: 42px;
