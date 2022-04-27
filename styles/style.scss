@@ -177,6 +177,7 @@ footer {
     .section-content {
       display: flex;
       padding: 40px 10%;
+      width: 100%;
 
       &.padding-0 {
         padding: 0 10%;
@@ -194,7 +195,8 @@ footer {
         gap: 0 50px;
 
         &>div {
-          width: 20%;
+          min-width: 20%;
+          overflow: hidden;
         }
 
         .footer-menu {
@@ -205,6 +207,57 @@ footer {
 
           h3 {
             color: #FFFFFF;
+          }
+
+          .bottom-logo {
+            display: flex;
+            align-items: center;
+            //width: 240px;
+
+            img {
+              height: 90px;
+
+              &:nth-child(2) {
+                height: 45px;
+                padding: 8px;
+              }
+            }
+
+            .logo-text1 {
+              color: $colorTopNavBar;
+              font-size: 10.6px;
+              font-weight: bold;
+            }
+
+            .logo-text2 {
+              color: #FFFFFF;
+              font-size: 14.1px;
+              font-weight: bold;
+            }
+          }
+
+          .address {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .phone-mail {
+              display: flex;
+              gap: 5px;
+              flex-wrap: wrap;
+              white-space: nowrap;
+              color: #FFFFFF;
+
+              &>div {
+                display: flex;
+                gap: 5px;
+
+                a {
+                  margin-right: 20px;
+                  color: #FFFFFF;
+                }
+              }
+            }
           }
         }
       }
@@ -229,7 +282,7 @@ footer {
             color: #FFFFFF;
           }
 
-          a {
+          .phoneNumber {
             text-decoration: underline;
           }
         }
@@ -237,14 +290,12 @@ footer {
         .copyright {
           color: $colorCopyright;
           font-size: 14px;
-          //width: 208px;
         }
       }
     }
 
     &.section3 {
       .section-content {
-        width: 100%;
 
         .language,
         .social-icons {
@@ -268,6 +319,7 @@ footer {
       .section-content {
         flex-wrap: wrap;
         gap: 0 50px;
+        width: auto;
 
         img {
           height: 42px;
@@ -314,7 +366,48 @@ footer {
   footer {
     section {
       .section-content {
-        padding: 0 10px;
+        padding: 0 20px;
+      }
+
+      .section-content.padding-0 {
+        padding: 20px 10px;
+      }
+
+      &.section1 .section-content {
+        .footer-menu {
+          display: none;
+
+          &:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 40px;
+
+            .bottom-logo {
+              width: 50%;
+            }
+
+            .address {
+              justify-content: end;
+              width: 50%;
+            }
+          }
+        }
+      }
+
+      &.section2 .section-content {
+        .footer-menu {
+          display: none;
+        }
+
+        .copyright {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      &.section3 {
+        padding: 0 0 20px 0;
       }
     }
   }
