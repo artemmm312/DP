@@ -263,6 +263,10 @@ footer {
       }
     }
 
+    &.adaptive {
+      display: none;
+    }
+
     &.section2 {
       .section-content {
         justify-content: space-between;
@@ -288,6 +292,7 @@ footer {
         }
 
         .copyright {
+          width: 208px;
           color: $colorCopyright;
           font-size: 14px;
         }
@@ -344,22 +349,19 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  nav .navbar .nav-menu {
-    gap: 15px;
+  nav .navbar {
+    padding: 0 10px;
+
+    .nav-menu {
+      gap: 15px;
+    }
   }
 
-  nav .bottom-navbar .bottom-menu {
-    gap: 20px;
-  }
-}
+  nav .bottom-navbar {
+    padding: 0 10px;
 
-
-@media (max-width: 1000px) {
-  nav {
-
-    .navbar,
-    .bottom-navbar {
-      padding: 0 10px;
+    .bottom-menu {
+      gap: 20px;
     }
   }
 
@@ -372,6 +374,29 @@ footer {
       .section-content.padding-0 {
         padding: 20px 10px;
       }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  /*   nav {
+
+    .navbar,
+    .bottom-navbar {
+      padding: 0 10px;
+    }
+  } */
+
+  footer {
+    section {
+      /* .section-content {
+        padding: 0 20px;
+      } */
+
+      /* .section-content.padding-0 {
+        padding: 20px 10px;
+      } */
 
       &.section1 .section-content {
         .footer-menu {
@@ -379,17 +404,64 @@ footer {
 
           &:nth-child(1) {
             display: flex;
+            justify-content: space-between;
             flex-direction: row;
             width: 100%;
             margin-top: 40px;
 
             .bottom-logo {
+              //align-items: flex-start;
+              height: 103px;
               width: 50%;
             }
 
             .address {
-              justify-content: end;
-              width: 50%;
+              //width: 50%;
+              width: 371px;
+              height: 143px;
+              line-height: 24.48px;
+              text-align: right;
+
+              .phone-mail {
+                justify-content: end;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      &.adaptive {
+        display: flex;
+
+        .section-content {
+          //flex-direction: column;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .footer-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 32%;
+
+            label {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0 20px;
+              height: 72px;
+              background: #495471;
+              border-radius: 5px;
+
+              input[type="checkbox"] {
+                display: none;
+              }
+            }
+
+            a {
+              display: flex;
+              padding-left: 20px;
             }
           }
         }

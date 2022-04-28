@@ -211,6 +211,9 @@ footer section.section1 .section-content .footer-menu .address .phone-mail > div
   margin-right: 20px;
   color: #FFFFFF;
 }
+footer section.adaptive {
+  display: none;
+}
 footer section.section2 .section-content {
   justify-content: space-between;
   gap: 0 50px;
@@ -231,6 +234,7 @@ footer section.section2 .section-content .footer-menu .phoneNumber {
   text-decoration: underline;
 }
 footer section.section2 .section-content .copyright {
+  width: 208px;
   color: #6B758F;
   font-size: 14px;
 }
@@ -269,18 +273,18 @@ footer section.section4 .section-content img {
   }
 }
 @media (max-width: 1100px) {
+  nav .navbar {
+    padding: 0 10px;
+  }
   nav .navbar .nav-menu {
     gap: 15px;
   }
 
+  nav .bottom-navbar {
+    padding: 0 10px;
+  }
   nav .bottom-navbar .bottom-menu {
     gap: 20px;
-  }
-}
-@media (max-width: 1000px) {
-  nav .navbar,
-nav .bottom-navbar {
-    padding: 0 10px;
   }
 
   footer section .section-content {
@@ -289,21 +293,75 @@ nav .bottom-navbar {
   footer section .section-content.padding-0 {
     padding: 20px 10px;
   }
+}
+@media (max-width: 1000px) {
+  /*   nav {
+
+    .navbar,
+    .bottom-navbar {
+      padding: 0 10px;
+    }
+  } */
+  footer section {
+    /* .section-content {
+      padding: 0 20px;
+    } */
+    /* .section-content.padding-0 {
+      padding: 20px 10px;
+    } */
+  }
   footer section.section1 .section-content .footer-menu {
     display: none;
   }
   footer section.section1 .section-content .footer-menu:nth-child(1) {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     width: 100%;
     margin-top: 40px;
   }
   footer section.section1 .section-content .footer-menu:nth-child(1) .bottom-logo {
+    height: 103px;
     width: 50%;
   }
   footer section.section1 .section-content .footer-menu:nth-child(1) .address {
+    width: 371px;
+    height: 143px;
+    line-height: 24.48px;
+    text-align: right;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address .phone-mail {
     justify-content: end;
-    width: 50%;
+    margin-right: 5px;
+  }
+  footer section.adaptive {
+    display: flex;
+  }
+  footer section.adaptive .section-content {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer section.adaptive .section-content .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 32%;
+  }
+  footer section.adaptive .section-content .footer-menu label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 72px;
+    background: #495471;
+    border-radius: 5px;
+  }
+  footer section.adaptive .section-content .footer-menu label input[type=checkbox] {
+    display: none;
+  }
+  footer section.adaptive .section-content .footer-menu a {
+    display: flex;
+    padding-left: 20px;
   }
   footer section.section2 .section-content .footer-menu {
     display: none;
