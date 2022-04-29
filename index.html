@@ -53,8 +53,28 @@
       </div>
       <label class="burger" for="burger">
         <input type="checkbox" id="burger">
-        <img class="checked" src="icons/nav-menu/burger.svg">
-        <img class="unchecked" src="icons/nav-menu/cancel.svg">
+        <img class="checked" src="icons/nav-menu/burger-menu.svg">
+        <img class="unchecked" src="icons/nav-menu/icon-close.svg">
+        <div class="menu">
+          <div class="menu-content">
+            <h1>Меню</h1>
+            <div class="menu-element">
+              <input type="checkbox" id="element1" checked="false">
+              <label for="element1">
+                Факультет
+                <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+                <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
+              </label>
+              <div class="dropdown">
+                <a href="/">Специальности</a>
+                <a href="/">Кафедры</a>
+                <a href="/">Деканат</a>
+                <a href="/">Достижения</a>
+                <a href="/">Доска почета</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </label>
       <ul class="bottom-menu">
         <li class="hide-1150"><label>Главная</label></li>
@@ -132,59 +152,89 @@
     <section class="adaptive">
       <div class="section-content">
         <div class="footer-menu">
+          <input type="checkbox" id="menu1" checked="false">
           <label for="menu1">
-            Университет<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu1">
+            Университет
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <a href="https://vstu.by/universitet/rektorat">Ректорат</a>
-          <a href="https://vstu.by/universitet/fakultety">Факультеты</a>
-          <a href="https://vstu.by/incoming-ru">Абитуриентам</a>
-          <a href="https://vstu.by/studentam-ru/stoimost-obucheniya">Стоимость обучения</a>
-          <a href="https://vstu.by/mezhdunarodnoe-sotrudnichestvo-ru/obuchenie-za-rubezhom">Обучение за рубежом</a>
-          <a href="https://nic.vstu.by/">Новости НИЧ</a>
+          <div class="dropdown">
+            <a href="https://vstu.by/universitet/rektorat">Ректорат</a>
+            <a href="https://vstu.by/universitet/fakultety">Факультеты</a>
+            <a href="https://vstu.by/incoming-ru">Абитуриентам</a>
+            <a href="https://vstu.by/studentam-ru/stoimost-obucheniya">Стоимость обучения</a>
+            <a href="https://vstu.by/mezhdunarodnoe-sotrudnichestvo-ru/obuchenie-za-rubezhom">Обучение за рубежом</a>
+            <a href="https://nic.vstu.by/">Новости НИЧ</a>
+          </div>
         </div>
         <div class="footer-menu">
+          <input type="checkbox" id="menu2" checked="false">
           <label for="menu2">
-            Студенту<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu2">
+            Студенту
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
-          <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почета</a>
-          <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
-          <a href="https://vstu.by/studentam-ru/ideologicheskaya-i-vospitatelnaya-rabota">Отдел воспитательной
-            работы</a>
-          <a href="https://ovr.vstu.by/socialno-psihologicheskaja-sluzhba/">Психологическая помощь</a>
-          <a href="https://stud.vstu.by/">Студенческий клуб</a>
+          <div class="dropdown">
+            <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
+            <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почета</a>
+            <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
+            <a href="https://vstu.by/studentam-ru/ideologicheskaya-i-vospitatelnaya-rabota">Отдел воспитательной
+              работы</a>
+            <a href="https://ovr.vstu.by/socialno-psihologicheskaja-sluzhba/">Психологическая помощь</a>
+            <a href="https://stud.vstu.by/">Студенческий клуб</a>
+          </div>
         </div>
         <div class="footer-menu">
+          <input type="checkbox" id="menu3" checked="false">
           <label for="menu3">
-            Абитуриенту<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu3">
+            Абитуриенту
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <a href="http://abiturient.vstu.by/ru/">abiturient.vstu.by</a>
+          <div class="dropdown">
+            <a href="http://abiturient.vstu.by/ru/">abiturient.vstu.by</a>
+          </div>
         </div>
         <div class="footer-menu">
+          <input type="checkbox" id="menu4" checked="false">
           <label for="menu4">
-            Главный корпус<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu4">
+            Главный корпу
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <p>210035, Республика Беларусь, г. Витебск,<br>Московский пр., 72, Главный корпус №1</p>
-          <a class="phoneNumber" href="https://vstu.by/kontakty/phone-book">Телефонный справочник</a>
-          <p>vstu@vstu.by</p>
+          <div class="dropdown">
+            <p>210035, Республика Беларусь, г. Витебск,<br>Московский пр., 72, Главный корпус №1</p>
+            <a class="phoneNumber" href="https://vstu.by/kontakty/phone-book">Телефонный справочник</a>
+            <p>vstu@vstu.by</p>
+          </div>
         </div>
         <div class="footer-menu">
+          <input type="checkbox" id="menu5" checked="false">
           <label for="menu5">
-            Приемная коммисия<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu5">
+            Приемная коммисия
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <p>
-            210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,
-          </p>
-          <p>+375 (212) 49-53-71, 49-53-53</p>
-          <p><a href="http://priem.vstu.by/">priem.vstu.by</a></p>
+          <div class="dropdown">
+            <p>
+              210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,
+            </p>
+            <p>+375 (212) 49-53-71, 49-53-53</p>
+            <p><a href="http://priem.vstu.by/">priem.vstu.by</a></p>
+          </div>
         </div>
         <div class="footer-menu">
+          <input type="checkbox" id="menu6" checked="false">
           <label for="menu6">
-            Библиотека УО «ВГТУ»<img src="icons/footer/StrokeDown.svg"><input type="checkbox" id="menu6">
+            Библиотека УО «ВГТУ»
+            <img class="StrokeDown" src="icons/footer/StrokeDown.svg">
+            <img class="StrokeUp" src="icons/footer/StrokeUp.svg">
           </label>
-          <p>210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,</p>
-          <p>+375 (212) 49-53-86</p>
-          <p><a href="https://library.vstu.by/">library.vstu.by</a></p>
+          <div class="dropdown">
+            <p>210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,</p>
+            <p>+375 (212) 49-53-86</p>
+            <p><a href="https://library.vstu.by/">library.vstu.by</a></p>
+          </div>
         </div>
       </div>
     </section>
@@ -237,9 +287,12 @@
           <a href="https://www.youtube.com/channel/UC5lAaVyyvZt_d-K17kjr3cg"><img src="icons/footer/youtube.svg"></a>
         </div>
         <div class="language">
-          <div>RU</div>
-          <div>BY</div>
-          <div>EN</div>
+          <input id="RU" type="radio" name="language" checked>
+          <label for="RU">RU</label>
+          <input id="BY" type="radio" name="language">
+          <label for="BY">BY</label>
+          <input id="EN" type="radio" name="language">
+          <label for="EN">EN</label>
         </div>
       </div>
     </section>

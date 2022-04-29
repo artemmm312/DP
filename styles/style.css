@@ -91,6 +91,8 @@ nav .bottom-navbar .burger input {
 }
 nav .bottom-navbar .burger img {
   display: flex;
+  width: 30px;
+  height: 18px;
   cursor: pointer;
 }
 nav .bottom-navbar .burger img.unchecked {
@@ -247,11 +249,19 @@ footer section.section3 .section-content .social-icons {
 footer section.section3 .section-content .language {
   justify-content: flex-end;
 }
+footer section.section3 .section-content .language input {
+  display: none;
+}
+footer section.section3 .section-content .language input:checked + label {
+  color: #FFFFFF;
+}
+footer section.section3 .section-content .language label {
+  cursor: pointer;
+}
 footer section.section4 {
   align-items: center;
   justify-content: center;
   background: #fff;
-  height: 114px;
 }
 footer section.section4 .section-content {
   flex-wrap: wrap;
@@ -263,7 +273,8 @@ footer section.section4 .section-content img {
 }
 
 @media (max-width: 1250px) {
-  nav .navbar .nav-menu {
+  nav .navbar .nav-menu,
+nav .bottom-navbar .bottom-menu {
     gap: 20px;
   }
 }
@@ -283,9 +294,6 @@ footer section.section4 .section-content img {
   nav .bottom-navbar {
     padding: 0 10px;
   }
-  nav .bottom-navbar .bottom-menu {
-    gap: 20px;
-  }
 
   footer section .section-content {
     padding: 0 20px;
@@ -293,23 +301,46 @@ footer section.section4 .section-content img {
   footer section .section-content.padding-0 {
     padding: 20px 10px;
   }
+  footer section.section4 {
+    padding: 30px 0;
+  }
+  footer section.section4 .section-content {
+    gap: 30px;
+  }
 }
 @media (max-width: 1000px) {
-  /*   nav {
-
-    .navbar,
-    .bottom-navbar {
-      padding: 0 10px;
-    }
-  } */
-  footer section {
-    /* .section-content {
-      padding: 0 20px;
-    } */
-    /* .section-content.padding-0 {
-      padding: 20px 10px;
-    } */
+  nav .navbar .nav-menu li.hide-768 {
+    display: none;
   }
+  nav .bottom-navbar .burger {
+    display: flex;
+  }
+  nav .bottom-navbar .burger .menu {
+    display: none;
+    justify-content: flex-end;
+    position: absolute;
+    top: 154px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  nav .bottom-navbar .burger .menu .menu-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #FFFFFF;
+  }
+  nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .bottom-navbar .burger input:checked ~ .menu {
+    display: flex;
+  }
+  nav .bottom-navbar .bottom-menu {
+    display: none;
+  }
+
   footer section.section1 .section-content .footer-menu {
     display: none;
   }
@@ -340,12 +371,14 @@ footer section.section4 .section-content img {
   footer section.adaptive .section-content {
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   footer section.adaptive .section-content .footer-menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 32%;
+    padding-bottom: 20px;
   }
   footer section.adaptive .section-content .footer-menu label {
     display: flex;
@@ -355,13 +388,34 @@ footer section.section4 .section-content img {
     height: 72px;
     background: #495471;
     border-radius: 5px;
+    cursor: pointer;
   }
-  footer section.adaptive .section-content .footer-menu label input[type=checkbox] {
+  footer section.adaptive .section-content .footer-menu label .StrokeDown {
+    display: block;
+  }
+  footer section.adaptive .section-content .footer-menu label .StrokeUp {
     display: none;
   }
-  footer section.adaptive .section-content .footer-menu a {
+  footer section.adaptive .section-content .footer-menu input {
+    display: none;
+  }
+  footer section.adaptive .section-content .footer-menu input:checked ~ label .StrokeDown {
+    display: none;
+  }
+  footer section.adaptive .section-content .footer-menu input:checked ~ label .StrokeUp {
+    display: block;
+  }
+  footer section.adaptive .section-content .footer-menu input:checked ~ .dropdown {
+    display: none;
+  }
+  footer section.adaptive .section-content .footer-menu > div {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding-left: 20px;
+  }
+  footer section.adaptive .section-content .phoneNumber {
+    text-decoration: underline;
   }
   footer section.section2 .section-content .footer-menu {
     display: none;
@@ -375,25 +429,71 @@ footer section.section4 .section-content img {
   }
 }
 @media (max-width: 768px) {
-  nav .navbar .nav-menu li.hide-768 {
+  footer section.section1 .section-content .footer-menu {
     display: none;
   }
-  nav .bottom-navbar .burger {
+  footer section.section1 .section-content .footer-menu:nth-child(1) {
     display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 40px;
   }
-  nav .bottom-navbar .bottom-menu {
-    display: none;
+  footer section.section1 .section-content .footer-menu:nth-child(1) .bottom-logo {
+    height: 103px;
+    width: 50%;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address {
+    height: auto;
+    width: auto;
+    line-height: 24.48px;
+    text-align: right;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address .phone-mail {
+    white-space: inherit;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address .phone-mail a {
+    margin: 0;
+  }
+  footer section.section4 .section-content {
+    gap: 30px;
+  }
+  footer section.section4 .section-content a {
+    width: 320px;
   }
 }
 @media (max-width: 480px) {
-  nav .navbar {
-    height: 44px;
-  }
   nav .navbar .nav-logo {
     font-size: 14px;
   }
   nav .navbar .nav-menu li.hide-480 {
     display: none;
+  }
+
+  footer section.section1 .section-content .footer-menu:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .bottom-logo {
+    width: 240px;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address {
+    text-align: center;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address .phone-mail {
+    justify-content: center;
+    margin: 0;
+  }
+  footer section.section1 .section-content .footer-menu:nth-child(1) .address .phone-mail div:nth-child(2) {
+    margin-left: 15px;
+  }
+  footer section.adaptive .section-content {
+    flex-direction: column;
+  }
+  footer section.adaptive .section-content .footer-menu {
+    width: 100%;
+  }
+  footer section.section4 .section-content a {
+    width: auto;
   }
 }
 
