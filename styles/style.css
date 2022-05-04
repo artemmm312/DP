@@ -104,6 +104,66 @@ nav .bottom-navbar .burger input:checked ~ .unchecked {
 nav .bottom-navbar .burger input:checked ~ .checked {
   display: none;
 }
+nav .bottom-navbar .burger .menu .menu-content {
+  gap: 20px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-header {
+  display: flex;
+  align-items: center;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-header h1 {
+  font-size: 28px;
+  line-height: 39px;
+  color: #1E2329;
+  width: 50%;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-header .feedback {
+  width: 50%;
+}
+nav .bottom-navbar .burger .menu .menu-content a,
+nav .bottom-navbar .burger .menu .menu-content h1,
+nav .bottom-navbar .burger .menu .menu-content label {
+  margin-left: 30px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element a {
+  color: #1C1A1B;
+  font-size: 18px;
+  line-height: 21px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element label .StrokeDown {
+  display: block;
+  width: 10px;
+  height: 6px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element label .StrokeUp {
+  display: none;
+  width: 10px;
+  height: 6px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element input {
+  display: none;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ label .StrokeDown {
+  display: none;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ label .StrokeUp {
+  display: block;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ .dropdown {
+  display: none;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown {
+  gap: 10px;
+}
+nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown a {
+  color: #C1C4CA;
+}
 nav .bottom-navbar .bottom-menu {
   display: flex;
   justify-content: flex-end;
