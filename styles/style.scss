@@ -68,8 +68,10 @@ nav {
     align-items: center;
     background: #fff;
     padding: 0 10%;
-    height: 106px;
+    height: 122px;
     color: #2E2E2E;
+    box-shadow: 2px 8px 30px rgba(201, 201, 201, 0.2);
+    //box-shadow: 0 10px 50px 15px rgba(0, 0, 0, 0.03);
 
     .bottom-logo {
       display: flex;
@@ -128,78 +130,133 @@ nav {
         }
       }
 
-      .menu .menu-content {
-        gap: 20px;
+      .menu {
+        .menu-content {
 
-        .menu-header {
-          display: flex;
-          align-items: center;
-
-          h1 {
-            font-size: 28px;
-            line-height: 39px;
-            color: #1E2329;
-            width: 50%;
-          }
-
-          .feedback {
-            width: 50%;
-          }
-        }
-
-        a,
-        h1,
-        label {
-          margin-left: 30px;
-        }
-
-        .menu-element {
-          a {
+          a,
+          h1,
+          label {
             color: #1C1A1B;
+            padding: 0 30px;
             font-size: 18px;
             line-height: 21px;
           }
-          label {
+
+          .menu-header {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
 
-            .StrokeDown {
+            h1 {
+              font-size: 28px;
+              line-height: 39px;
+              color: #1E2329;
+              width: 100px;
+            }
+
+            .feedback {
+              width: calc(100% - 100px);
+              color: #C4C4C4;
+              text-align: right;
+            }
+          }
+
+          .menu-element {
+            border: 0 1px solid #FAFAFA;
+
+            &>a {
               display: block;
-              width: 10px;
-              height: 6px;
+              line-height: 61px;
+              background: #FAFAFA;
             }
 
-            .StrokeUp {
+            label {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              line-height: 61px;
+              cursor: pointer;
+              border-left: 3px solid $colorMain;
+
+              .StrokeDown {
+                display: none;
+                width: 10px;
+                height: 6px;
+              }
+
+              .StrokeUp {
+                display: block;
+                width: 10px;
+                height: 6px;
+              }
+            }
+
+            input {
               display: none;
-              width: 10px;
-              height: 6px;
+            }
+
+            input:checked~label {
+              border-left: 3px solid white;
+            }
+
+            input:checked~label .StrokeDown {
+              display: block;
+            }
+
+            input:checked~label .StrokeUp {
+              display: none;
+            }
+
+            input:checked~.dropdown {
+              display: none;
+            }
+
+            .dropdown {
+              gap: 10px;
+
+              a {
+                color: $colorTopNavBar;
+                line-height: 61px;
+              }
             }
           }
 
-          input {
-            display: none;
-          }
+          .bottom-menu-element {
+            display: flex;
 
-          input:checked~label .StrokeDown {
-            display: none;
-          }
 
-          input:checked~label .StrokeUp {
-            display: block;
-          }
+            .language,
+            .social-icons {
+              display: flex;
+              width: 50%;
+              margin: 25px;
+              gap: 10px;
 
-          input:checked~.dropdown {
-            display: none;
-          }
-
-          .dropdown {
-            gap: 10px;
-
-            a {
-              color: $colorTopNavBar;
+              a,
+              label {
+                padding: 0;
+              }
             }
+
+            .language {
+              justify-content: flex-end;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 120%;
+
+              input {
+                display: none;
+              }
+
+              input:checked+label {
+                color: #495471;
+              }
+
+              label {
+                color: #D9D9D9;
+                cursor: pointer;
+              }
+            }
+
           }
         }
       }
@@ -210,26 +267,93 @@ nav {
       justify-content: flex-end;
       gap: 25px;
       width: calc(100% - 265px);
+      height: 100%;
       color: #1C1A1B;
       font-weight: bold;
 
       li {
         display: flex;
+        align-items: center;
         cursor: pointer;
 
         &:hover {
           color: $colorMain;
         }
 
-        label {
-          display: flex;
-          cursor: pointer;
-        }
+        // label {
+        //   display: flex;
+        //   cursor: pointer;
+        // }
 
         img {
           padding: 0 0 0 7px;
+          width: 10.12px;
+          height: 6.12px;
+
+          &.StrokeUp {
+            display: none;
+          }
+        }
+
+
+        .menu-dropdown {
+          display: none;
+          justify-content: center;
+          position: absolute;
+          height: 100vh;
+          width: 100%;
+          top: 170px;
+          left: 0;
+          background: rgba(0, 0, 0, 0.5);
+
+          .menu-dropdown-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            width: 1290px;
+            height: fit-content;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            background: white;
+
+            >div {
+              display: flex;
+              flex-direction: column;
+              width: 30%;
+              color: #1C1A1B;
+
+              h3 {
+                font-size: 18px;
+                line-height: 22px;
+
+              }
+              img {
+                padding: 0;
+                height: 175px;
+                width: 370px;
+                border-radius: 5px;
+
+              }
+            }
+          }
+        }
+
+        &:hover>.menu-dropdown {
+          display: flex;
+        }
+
+        &:hover .StrokeDown {
+          display: none;
+        }
+
+        &:hover .StrokeUp {
+          display: block;
         }
       }
+
+      // li:hover ~ li .menu-dropdown {
+      //   display: flex;
+      // }
     }
   }
 }
@@ -247,6 +371,7 @@ footer {
   flex-direction: column;
   background: $colorVstu;
   color: $colorTopNavBar;
+  padding-top: 20px;
 
   section {
     display: flex;
@@ -455,7 +580,7 @@ footer {
   footer {
     section {
       .section-content {
-        padding: 0 20px;
+        //padding: 0 20px;
       }
 
       .section-content.padding-0 {
@@ -493,16 +618,24 @@ footer {
           //flex-direction: column;
           justify-content: flex-end;
           position: absolute;
-          top: 154px;
+          top: 170px;
           left: 0;
+          //min-height: 80vh;
           width: 100%;
           background: rgba(0, 0, 0, 0.5);
+
+
 
           .menu-content {
             display: flex;
             flex-direction: column;
             width: 50%;
             background: #FFFFFF;
+
+            .menu-header {
+              box-shadow: inset 0 30px 30px -30px rgba(201, 201, 201, 0.2);
+            }
+
 
             .menu-element .dropdown {
               display: flex;
@@ -535,7 +668,7 @@ footer {
           justify-content: space-between;
           flex-direction: row;
           width: 100%;
-          margin-top: 40px;
+          //margin-top: 40px;
 
           .bottom-logo {
             height: 103px;
@@ -583,11 +716,11 @@ footer {
             cursor: pointer;
 
             .StrokeDown {
-              display: block;
+              display: none;
             }
 
             .StrokeUp {
-              display: none;
+              display: block;
             }
           }
 
@@ -596,11 +729,11 @@ footer {
           }
 
           input:checked~label .StrokeDown {
-            display: none;
+            display: block;
           }
 
           input:checked~label .StrokeUp {
-            display: block;
+            display: none;
           }
 
           input:checked~.dropdown {
@@ -640,6 +773,10 @@ footer {
 
 
 @media (max-width: 768px) {
+  nav .bottom-navbar .burger .menu .menu-content {
+    width: 100%;
+  }
+
   footer section {
 
     &.section1 .section-content {
@@ -650,7 +787,7 @@ footer {
           display: flex;
           justify-content: space-between;
           width: auto;
-          margin-top: 40px;
+          //margin-top: 40px;
 
           .bottom-logo {
             height: 103px;
@@ -699,6 +836,10 @@ footer {
           display: none;
         }
       }
+    }
+
+    .bottom-navbar .burger .menu .menu-content .menu-header {
+      display: none;
     }
   }
 

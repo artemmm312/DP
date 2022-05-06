@@ -56,8 +56,9 @@ nav .bottom-navbar {
   align-items: center;
   background: #fff;
   padding: 0 10%;
-  height: 106px;
+  height: 122px;
   color: #2E2E2E;
+  box-shadow: 2px 8px 30px rgba(201, 201, 201, 0.2);
 }
 nav .bottom-navbar .bottom-logo {
   display: flex;
@@ -104,8 +105,13 @@ nav .bottom-navbar .burger input:checked ~ .unchecked {
 nav .bottom-navbar .burger input:checked ~ .checked {
   display: none;
 }
-nav .bottom-navbar .burger .menu .menu-content {
-  gap: 20px;
+nav .bottom-navbar .burger .menu .menu-content a,
+nav .bottom-navbar .burger .menu .menu-content h1,
+nav .bottom-navbar .burger .menu .menu-content label {
+  color: #1C1A1B;
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 21px;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-header {
   display: flex;
@@ -115,45 +121,50 @@ nav .bottom-navbar .burger .menu .menu-content .menu-header h1 {
   font-size: 28px;
   line-height: 39px;
   color: #1E2329;
-  width: 50%;
+  width: 100px;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-header .feedback {
-  width: 50%;
+  width: calc(100% - 100px);
+  color: #C4C4C4;
+  text-align: right;
 }
-nav .bottom-navbar .burger .menu .menu-content a,
-nav .bottom-navbar .burger .menu .menu-content h1,
-nav .bottom-navbar .burger .menu .menu-content label {
-  margin-left: 30px;
+nav .bottom-navbar .burger .menu .menu-content .menu-element {
+  border: 0 1px solid #FAFAFA;
 }
-nav .bottom-navbar .burger .menu .menu-content .menu-element a {
-  color: #1C1A1B;
-  font-size: 18px;
-  line-height: 21px;
+nav .bottom-navbar .burger .menu .menu-content .menu-element > a {
+  display: block;
+  line-height: 61px;
+  background: #FAFAFA;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  line-height: 61px;
   cursor: pointer;
+  border-left: 3px solid #8A2BE2;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element label .StrokeDown {
-  display: block;
+  display: none;
   width: 10px;
   height: 6px;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element label .StrokeUp {
-  display: none;
+  display: block;
   width: 10px;
   height: 6px;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element input {
   display: none;
 }
+nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ label {
+  border-left: 3px solid white;
+}
 nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ label .StrokeDown {
-  display: none;
+  display: block;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ label .StrokeUp {
-  display: block;
+  display: none;
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element input:checked ~ .dropdown {
   display: none;
@@ -163,28 +174,109 @@ nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown {
 }
 nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown a {
   color: #C1C4CA;
+  line-height: 61px;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element {
+  display: flex;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language,
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .social-icons {
+  display: flex;
+  width: 50%;
+  margin: 25px;
+  gap: 10px;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language a,
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language label,
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .social-icons a,
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .social-icons label {
+  padding: 0;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language {
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language input {
+  display: none;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language input:checked + label {
+  color: #495471;
+}
+nav .bottom-navbar .burger .menu .menu-content .bottom-menu-element .language label {
+  color: #D9D9D9;
+  cursor: pointer;
 }
 nav .bottom-navbar .bottom-menu {
   display: flex;
   justify-content: flex-end;
   gap: 25px;
   width: calc(100% - 265px);
+  height: 100%;
   color: #1C1A1B;
   font-weight: bold;
 }
 nav .bottom-navbar .bottom-menu li {
   display: flex;
+  align-items: center;
   cursor: pointer;
 }
 nav .bottom-navbar .bottom-menu li:hover {
   color: #8A2BE2;
 }
-nav .bottom-navbar .bottom-menu li label {
-  display: flex;
-  cursor: pointer;
-}
 nav .bottom-navbar .bottom-menu li img {
   padding: 0 0 0 7px;
+  width: 10.12px;
+  height: 6.12px;
+}
+nav .bottom-navbar .bottom-menu li img.StrokeUp {
+  display: none;
+}
+nav .bottom-navbar .bottom-menu li .menu-dropdown {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 170px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 1290px;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  background: white;
+}
+nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content > div {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  color: #1C1A1B;
+}
+nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content > div h3 {
+  font-size: 18px;
+  line-height: 22px;
+}
+nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content > div img {
+  padding: 0;
+  height: 175px;
+  width: 370px;
+  border-radius: 5px;
+}
+nav .bottom-navbar .bottom-menu li:hover > .menu-dropdown {
+  display: flex;
+}
+nav .bottom-navbar .bottom-menu li:hover .StrokeDown {
+  display: none;
+}
+nav .bottom-navbar .bottom-menu li:hover .StrokeUp {
+  display: block;
 }
 
 .content {
@@ -199,6 +291,7 @@ footer {
   flex-direction: column;
   background: #434C63;
   color: #C1C4CA;
+  padding-top: 20px;
 }
 footer section {
   display: flex;
@@ -355,9 +448,6 @@ nav .bottom-navbar .bottom-menu {
     padding: 0 10px;
   }
 
-  footer section .section-content {
-    padding: 0 20px;
-  }
   footer section .section-content.padding-0 {
     padding: 20px 10px;
   }
@@ -379,7 +469,7 @@ nav .bottom-navbar .bottom-menu {
     display: none;
     justify-content: flex-end;
     position: absolute;
-    top: 154px;
+    top: 170px;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
@@ -389,6 +479,9 @@ nav .bottom-navbar .bottom-menu {
     flex-direction: column;
     width: 50%;
     background: #FFFFFF;
+  }
+  nav .bottom-navbar .burger .menu .menu-content .menu-header {
+    box-shadow: inset 0 30px 30px -30px rgba(201, 201, 201, 0.2);
   }
   nav .bottom-navbar .burger .menu .menu-content .menu-element .dropdown {
     display: flex;
@@ -409,7 +502,6 @@ nav .bottom-navbar .bottom-menu {
     justify-content: space-between;
     flex-direction: row;
     width: 100%;
-    margin-top: 40px;
   }
   footer section.section1 .section-content .footer-menu:nth-child(1) .bottom-logo {
     height: 103px;
@@ -451,19 +543,19 @@ nav .bottom-navbar .bottom-menu {
     cursor: pointer;
   }
   footer section.adaptive .section-content .footer-menu label .StrokeDown {
-    display: block;
+    display: none;
   }
   footer section.adaptive .section-content .footer-menu label .StrokeUp {
-    display: none;
+    display: block;
   }
   footer section.adaptive .section-content .footer-menu input {
     display: none;
   }
   footer section.adaptive .section-content .footer-menu input:checked ~ label .StrokeDown {
-    display: none;
+    display: block;
   }
   footer section.adaptive .section-content .footer-menu input:checked ~ label .StrokeUp {
-    display: block;
+    display: none;
   }
   footer section.adaptive .section-content .footer-menu input:checked ~ .dropdown {
     display: none;
@@ -489,6 +581,10 @@ nav .bottom-navbar .bottom-menu {
   }
 }
 @media (max-width: 768px) {
+  nav .bottom-navbar .burger .menu .menu-content {
+    width: 100%;
+  }
+
   footer section.section1 .section-content .footer-menu {
     display: none;
   }
@@ -496,7 +592,6 @@ nav .bottom-navbar .bottom-menu {
     display: flex;
     justify-content: space-between;
     width: auto;
-    margin-top: 40px;
   }
   footer section.section1 .section-content .footer-menu:nth-child(1) .bottom-logo {
     height: 103px;
@@ -526,6 +621,9 @@ nav .bottom-navbar .bottom-menu {
     font-size: 14px;
   }
   nav .navbar .nav-menu li.hide-480 {
+    display: none;
+  }
+  nav .bottom-navbar .burger .menu .menu-content .menu-header {
     display: none;
   }
 
