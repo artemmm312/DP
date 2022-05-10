@@ -282,6 +282,7 @@ nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content .dropdo
   border-radius: 5px;
 }
 nav .bottom-navbar .bottom-menu li .menu-dropdown .menu-dropdown-content .dropdown-content > div p {
+  color: #333E48;
   margin-top: 15px;
   font-size: 14px;
   line-height: 140%;
@@ -349,9 +350,23 @@ nav .bottom-navbar .bottom-menu li:hover .StrokeUp {
 
 .content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: #FAFAFA no-repeat top/115% url(../img/illustrations.png);
 }
-.content img {
-  max-width: 100%;
+.content .container {
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.content .container .lenta {
+  display: flex;
+  justify-content: space-between;
+}
+.content .container .lenta img {
+  height: 600px;
+  width: 740px;
 }
 
 footer {

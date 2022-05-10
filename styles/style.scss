@@ -2,6 +2,7 @@ $colorTopNavBar: #C1C4CA;
 $colorVstu: #434C63;
 $colorMain: #8A2BE2;
 $colorCopyright: #6B758F;
+$colorText: #333E48;
 
 
 
@@ -352,6 +353,7 @@ nav {
                 }
 
                 p {
+                  color: $colorText;
                   margin-top: 15px;
                   font-size: 14px;
                   line-height: 140%;
@@ -440,10 +442,28 @@ nav {
 
 .content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: #FAFAFA no-repeat top/115% url(../img/illustrations.png);
 
-  img {
-    max-width: 100%;
+  .container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    .lenta {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        height: 600px;
+        width: 740px;
+      }
+    }
   }
+
+
 }
 
 footer {
@@ -882,9 +902,10 @@ footer {
       }
     }
 
-    &.adaptive .section-content{
+    &.adaptive .section-content {
+
       .footer-menu:nth-child(4),
-      .footer-menu:nth-child(5), 
+      .footer-menu:nth-child(5),
       .footer-menu:nth-child(6) {
         width: 49%;
       }
