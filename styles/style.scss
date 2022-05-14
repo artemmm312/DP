@@ -33,18 +33,29 @@ ul {
   list-style: none;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1290px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 nav {
   width: 100%;
   display: flex;
   flex-direction: column;
+  //align-items: center;
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: $colorVstu;
-    padding: 0 10%;
-    height: 48px;
+    //padding: 0 10%;
+    //height: 48px;
     color: $colorTopNavBar;
 
     .nav-logo {
@@ -74,15 +85,14 @@ nav {
     display: flex;
     align-items: center;
     background: #fff;
-    padding: 0 10%;
     height: 122px;
     color: #2E2E2E;
     box-shadow: 2px 8px 30px rgba(201, 201, 201, 0.2);
-    //box-shadow: 0 10px 50px 15px rgba(0, 0, 0, 0.03);
 
     .bottom-logo {
       display: flex;
       align-items: center;
+      width: 270px;
 
       img {
         height: 90px;
@@ -273,7 +283,7 @@ nav {
       display: flex;
       justify-content: flex-end;
       gap: 25px;
-      width: calc(100% - 265px);
+      //width: calc(100% - 265px);
       height: 100%;
       color: #1C1A1B;
       font-weight: bold;
@@ -448,9 +458,9 @@ nav {
   background: #FAFAFA no-repeat top/115% url(../img/illustrations.png);
 
   .container {
-    max-width: 1140px;
+    /* max-width: 1140px;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto; */
 
     .lenta {
       display: flex;
