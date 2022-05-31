@@ -919,9 +919,31 @@ a {
 
 @media (max-width: 620px) {
   .header .bottom-header__navbar .burger {
+    &__language {
+      gap: 10px;
+    }
+
+    &__social-icon {
+      gap: 0;
+    }
+
     &-menu {
       &__header {
         display: none;
+      }
+
+      &__element {
+        &-link {
+          padding: 13px;
+        }
+
+        label {
+          padding: 10px;
+        }
+      }
+
+      &__footer {
+        padding: 10px;
       }
     }
   }
@@ -931,6 +953,14 @@ a {
 
     &__menu {
       width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header .bottom-header__navbar .burger {
+    &-menu__content {
+      width: 100%;
     }
   }
 }
