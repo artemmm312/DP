@@ -750,6 +750,7 @@ a {
 
           &__header {
             display: flex;
+            gap: 20px;
             align-items: center;
             justify-content: space-between;
             padding: 0 30px 0 33px;
@@ -917,6 +918,14 @@ a {
 }
 
 @media (max-width: 620px) {
+  .header .bottom-header__navbar .burger {
+    &-menu {
+      &__header {
+        display: none;
+      }
+    }
+  }
+
   .footer .top-section .footer-adaptiv {
     flex-direction: column;
 
