@@ -14,6 +14,20 @@ jQuery(function () {
     }
   });
 
+
+
+/*   new Splide('.splide', {
+    type: 'loop',
+    perPage: 1,
+    speed: 1000,
+    arrows: false,
+    autoplay: true,
+    interval: 5000,
+    pauseOnHover: true,
+  }).mount(); */
+
+
+
 /*   $(window).resize(function () {
     $('#wrapper').css({
       'height': ($(document).height()) + 'px'

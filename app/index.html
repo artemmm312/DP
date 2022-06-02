@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/splide-4.0.6/dist/css/themes/splide-sea-green.min.css">
 </head>
 
 <body>
-    <div class="shadow"></div>
   <header class="header">
     <section class="top-header">
       <div class="container top-header__container">
@@ -254,10 +254,21 @@
     </section>
   </header>
 
-<!--   <div class="shadow"></div> -->
+  <div class="shadow"></div>
+
+  <!-- <section class="splide" aria-labelledby="carousel-heading">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+    </ul>
+  </div>
+</section> -->
+
 
   <main class="main">
-    <section class="top-main">
+    <!--     <section class="top-main">
       <img class="left-img" src="img/main/illustrations-left.svg">
       <div class="container top-main__container">
         <div class="slaider">
@@ -269,141 +280,133 @@
             взависимости от их уровня, должны быть призваны
             к ответу, мы вынуждены отталкиваться от этого.
           </p>
-          
+          <section class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
       <img class="rigt-img" src="img/main/illustrations-right.svg">
-    </section>
+    </section> -->
 
     <section class="bottom-main">
       <div class="container bottom-main__container">
         <div class="news">
           <nav class="news__navbar">
             <ul class="news__navbar-menu">
-              <li class="news__navbar-menu-item"><a href="/">Объявления</a></li>
-              <li class="news__navbar-menu-item"><a href="/">Новости</a></li>
-              <li class="news__navbar-menu-item"><a href="/">Спортивные события</a></li>
-              <li class="news__navbar-menu-item"><a href="/">Все новости</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Объявления</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link--activ" href="/">Новости</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Спортивные события</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Все новости</a></li>
             </ul>
           </nav>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+          <div class="news__contents">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="news__content">
-            <img class="news__img " src="img/main/news/img.png">
-            <div class="news__text">
-              <a href="/">
-                <h1 class="news__text-header">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
                   Предварительная регистрация абитуриентов
-                </h1>
-              </a>
-              <p class="news__text-preview">
-                А ещё интерактивные прототипы могут быть
-                превращены в посмешище, хотя само их
-                существование приносит несомненную пользу.
-              </p>
-              <a href="/">
-                <p class="more">
-                  Подробнеее
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
                 </p>
-              </a>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -713,6 +716,7 @@
   </footer>
 
   <script src="js/main.min.js"></script>
+  <script src="libs/splide-4.0.6/dist/js/splide.min.js"></script>
 </body>
 
 </html>

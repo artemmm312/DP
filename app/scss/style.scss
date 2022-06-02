@@ -366,8 +366,6 @@ a {
       background: #fafafa;
     }
 
-    
-
     .left-img,
     .right-img {
       overflow: hidden;
@@ -379,11 +377,104 @@ a {
 
     &__container {
       display: flex;
+      gap: 15px;
+      justify-content: space-between;
     }
 
     .news {
-      &__navbar-venu {
+      width: 70%;
+
+      &__navbar-menu {
         display: flex;
+        justify-content: flex-start;
+        padding: 25px;
+        margin: 0;
+
+        &-item {
+          width: 20%;
+          text-align: flex-start;
+        }
+
+        &-item:last-child {
+          display: flex;
+          justify-content: flex-end;
+          width: 40%;
+        }
+
+        &-link {
+          font-family: Montserrat, Helvetica, Arial, serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 22px;
+          color: #c4c4c4;
+
+          &--activ {
+            font-family: Montserrat, Helvetica, Arial, serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            color: #8a2be2;
+          }
+
+          
+        }
+      }
+
+      &__contents {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+      }
+
+      &__content {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% - 15px)/2);
+      }
+
+      &__img {
+        width: 100%;
+      }
+
+      &__text {
+        padding: 15px;
+
+        &-date {
+          font-family: Roboto, Helvetica, Arial, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 120%;
+          color: #c4c4c4;
+        }
+
+        &-header {
+          font-family: Montserrat, Helvetica, Arial, serif;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 120%;
+          color: #1c1a1b;
+        }
+
+        &-preview {
+          font-family: Roboto, Helvetica, Arial, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+          color: #333e48;
+        }
+
+        &-more {
+          font-family: Roboto, Helvetica, Arial, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+          color: #c4c4c4;
+        }
+
+        a:hover {
+          color: #8a2be2;
+        }
       }
     }
   }
