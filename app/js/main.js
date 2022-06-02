@@ -6,13 +6,20 @@ jQuery(function () {
   $(".drop").on("mouseleave", () => $('.shadow').hide());
   $(".dropdown").on("mouseenter", () => $('.shadow').show());
   $(".dropdown").on("mouseleave", () => $('.shadow').hide());
-  $("#burger").on('change', function () {
+  $("#burger").on('change', function ( ) {
     if (this.checked) {
       $('.shadow').show();
     } else {
       $('.shadow').hide();
     }
   });
+
+/*   $(window).resize(function () {
+    $('#wrapper').css({
+      'height': ($(document).height()) + 'px'
+    });
+    alert('hello');
+  }); */
 
 
   var options = {

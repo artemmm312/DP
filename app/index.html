@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="shadow"></div>
   <header class="header">
     <section class="top-header">
       <div class="container top-header__container">
@@ -24,11 +25,11 @@
                 <img class="stroke-down" src="img/header/top-header/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/header/top-header/stroke/stroke-up.svg">
               </div>
-              <div class="dropdown">
-                <a class="dropdown-link" href="/">ФИТР</a>
-                <a class="dropdown-link" href="/">ФД</a>
-                <a class="dropdown-link" href="/">ЗФ</a>
-                <a class="dropdown-link" href="/">ФПК и ПК</a>
+              <div class="dropdown-top">
+                <a class="dropdown-top__link" href="/">ФИТР</a>
+                <a class="dropdown-top__link" href="/">ФД</a>
+                <a class="dropdown-top__link" href="/">ЗФ</a>
+                <a class="dropdown-top__link" href="/">ФПК и ПК</a>
               </div>
             </li>
             <li class="top-header__navbar-menu-item"><a href="/">ФЭБУ </a></li>
@@ -168,7 +169,7 @@
                   <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
                   <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
                 </label>
-                <div class="dropdown">
+                <div class="burger-menu-dropdown">
                   <a href="/">Специальности</a>
                   <a href="/">Кафедры</a>
                   <a href="/">Деканат</a>
@@ -183,7 +184,7 @@
                   <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
                   <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
                 </label>
-                <div class="dropdown">
+                <div class="burger-menu-dropdown">
                   <a href="https://abiturient.vstu.by/ru/category/news/">Новости</a>
                   <a href="https://abiturient.vstu.by/ru/category/podgotovka/">Подготовка</a>
                   <a href="https://abiturient.vstu.by/ru/category/testirovanie/">Тестирование</a>
@@ -198,7 +199,7 @@
                   <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
                   <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
                 </label>
-                <div class="dropdown">
+                <div class="burger-menu-dropdown">
                   <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
                   <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почта</a>
                   <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
@@ -218,7 +219,7 @@
                   <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
                   <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
                 </label>
-                <div class="dropdown">
+                <div class="burger-menu-dropdown">
                   <a href="/">1 пункт</a>
                   <a href="/">2 пункт</a>
                   <a href="/">3 пункт</a>
@@ -253,15 +254,25 @@
     </section>
   </header>
 
-  <div class="shadow"></div>
+<!--   <div class="shadow"></div> -->
 
-  <main>
+  <main class="main">
     <section class="top-main">
+      <img class="left-img" src="img/main/illustrations-left.svg">
       <div class="container top-main__container">
         <div class="slaider">
-
+          <h1 class="slider__header">
+            Заколовок слайдера
+          </h1>
+          <p class="slider__text">
+            Внезапно, действия представителей оппозиции,
+            взависимости от их уровня, должны быть призваны
+            к ответу, мы вынуждены отталкиваться от этого.
+          </p>
+          
         </div>
       </div>
+      <img class="rigt-img" src="img/main/illustrations-right.svg">
     </section>
 
     <section class="bottom-main">
@@ -469,22 +480,6 @@
         </div>
       </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
   </main>
 
   <footer class="footer">
@@ -550,7 +545,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <a href="https://vstu.by/universitet/rektorat">Ректорат</a>
                 <a href="https://vstu.by/universitet/fakultety">Факультеты</a>
                 <a href="https://vstu.by/incoming-ru">Абитуриентам</a>
@@ -567,7 +562,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
                 <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почета</a>
                 <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
@@ -584,7 +579,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <a href="https://abiturient.vstu.by/ru/category/news/">Новости</a>
                 <a href="https://abiturient.vstu.by/ru/category/podgotovka/">Подготовка</a>
                 <a href="https://abiturient.vstu.by/ru/category/testirovanie/">Тестирование</a>
@@ -599,7 +594,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <p>210035, Республика Беларусь, г. Витебск,<br>Московский пр., 72, Главный корпус №1</p>
                 <a class="phoneNumber" href="https://vstu.by/kontakty/phone-book">Телефонный справочник</a>
                 <p><a href="mail:vstu@vstu.by">vstu@vstu.by</a></p>
@@ -612,7 +607,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <p>
                   210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,
                 </p>
@@ -627,7 +622,7 @@
                 <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
                 <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
               </label>
-              <div class="dropdown">
+              <div class="dropdown-footer">
                 <p>210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,</p>
                 <p>+375 (212) 49-53-86</p>
                 <p><a href="https://library.vstu.by/">library.vstu.by</a></p>
