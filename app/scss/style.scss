@@ -496,54 +496,59 @@ a {
       gap: 15px;
       width: calc(100% - 70% - 15px);
 
-      .dean {
+      /* .dean {
         display: flex;
         align-items: flex-end;
         width: 100%;
         height: 225px;
         background: url("../img/main/lenta/dean.png") 100% no-repeat;
-        background-position: 98% 0%;
+        background-position: 98% 0%; */
 
-        &-info {
-          z-index: -1;
-          width: 100%;
-          height: 214px;
-          padding: 15px;
-          margin-top: 10px;
-          border: 7px solid #8a2be2;
-          border-radius: 15px;
+      .dean {
+        position: relative;
+        width: 100%;
+        height: 214px;
+        padding: 15px;
+        margin-top: 10px;
+        border: 7px solid #8a2be2;
+        border-radius: 15px;
+        //z-index: -1;
 
-          &__header {
-            width: 180px;
-            font-family: Montserrat, Helvetica, Arial, serif;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 125%;
-            color: #1c1a1b;
-          }
+        &__header {
+          width: 180px;
+          font-family: Montserrat, Helvetica, Arial, serif;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 125%;
+          color: #1c1a1b;
+        }
 
-          &__text {
-            width: 55%;
-            margin-bottom: 5px;
-            font-family: Roboto, Helvetica, Arial, serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 130%;
-            color: #333e48;
-          }
+        &__text {
+          width: 55%;
+          margin-bottom: 5px;
+          font-family: Roboto, Helvetica, Arial, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 130%;
+          color: #333e48;
+        }
 
-          &__more {
-            z-index: 1;
-            font-family: Roboto, Helvetica, Arial, serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 110%;
-            color: #c4c4c4;
-          }
+        &__more {
+          font-family: Roboto, Helvetica, Arial, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 110%;
+          color: #c4c4c4;
+        }
 
-          &__more:hover {
-            color: #8a2be2;
-          }
+        &__more:hover {
+          color: #8a2be2;
+        }
+
+        &__img {
+          position: absolute;
+          top: -20px;
+          right: 0;
         }
       }
 
@@ -735,37 +740,39 @@ a {
 
   .foot-main {
     &__container {
+      position: relative;
       display: flex;
       align-items: flex-end;
       width: 100%;
-      height: 225px;
-
-      /* background: url("../img/main/foot/img.png") 100% no-repeat;
-      background-position: 98.7% 0%; */
+      height: 229px;
+      padding: 0;
     }
 
     &__content {
-      //z-index: -1;
       display: flex;
+      flex-direction: column;
+      gap: 20px;
       width: 100%;
       height: 170px;
-      padding: 15px;
+      padding: 30px;
       background: #8a2be2;
       border-radius: 15px 15px 0 0;
-    }
 
-    &__record {
       &-header {
+        width: 50%;
+        margin: 0;
         font-family: Montserrat, Helvetica, Arial, serif;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 110%;
         color: #fdfdf5;
       }
 
       &-text {
+        width: 45%;
+        margin: 0;
         font-family: Roboto, Helvetica, Arial, serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 135%;
         color: #fff;
@@ -774,8 +781,7 @@ a {
 
     &__img {
       position: absolute;
-      right: calc((100% - 1290px)/2);
-      left: calc((100% - 1290px)/2);
+      right: 0;
     }
   }
 }
