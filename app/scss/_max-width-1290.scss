@@ -1,0 +1,9 @@
+@media (max-width: 1290px) {
+  .header .bottom-header {
+    &__nav-menu-item .dropdown {
+      right: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

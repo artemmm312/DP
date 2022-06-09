@@ -1,0 +1,9 @@
+@media (max-width: 480px) {
+  .header .bottom-header {
+    &__navbar .burger {
+      &-menu__content {
+        width: 100%;
+      }
+    }
+  }
+}

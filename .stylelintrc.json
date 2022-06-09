@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "rules": {
+    "at-rule-no-unknow": [true, {
+      "ignoreAtRules": ["include", "mixin"]
+    }],
+    "font-family-no-missing-generic-family-keyword": [true, {
+      "ignoreFontFamilies": ["Roboto", "Montserrat"]
+    }]
+
+  }
+}

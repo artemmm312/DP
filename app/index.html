@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/splide-4.0.6/dist/css/themes/splide-sea-green.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <section class="top-header">
+      <div class="container top-header__container">
+        <div class="top-header__date" id="header-date"></div>
+        <nav class="top-header__navbar">
+          <ul class="top-header__navbar-menu">
+            <li class="top-header__navbar-menu-item"><a href="/">УО «ВГТУ»</a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">Абитуриент ВГТУ</a></li>
+            <li class="top-header__navbar-menu-adaptiv">
+              <div class="item">
+                <a href="/">ФЭБУ</a>
+                <img class="stroke-down" src="img/header/top-header/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/header/top-header/stroke/stroke-up.svg">
+              </div>
+              <div class="dropdown-top">
+                <a class="dropdown-top__link" href="/">ФИТР</a>
+                <a class="dropdown-top__link" href="/">ФД</a>
+                <a class="dropdown-top__link" href="/">ЗФ</a>
+                <a class="dropdown-top__link" href="/">ФПК и ПК</a>
+              </div>
+            </li>
+            <li class="top-header__navbar-menu-item"><a href="/">ФЭБУ </a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">ФИТР</a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">ФД</a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">ЗФ</a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">ФПК и ПК</a></li>
+            <li class="top-header__navbar-menu-item"><a href="/">Контакты</a></li>
+          </ul>
+          <div class="top-header__tools">
+            <img class="search-icon" src="img/header/top-header/search.svg">
+            <img class="eye-icon" src="img/header/top-header/eye.svg">
+          </div>
+        </nav>
+
+      </div>
+    </section>
+    <section class="bottom-header">
+      <div class="container bottom-header__container">
+        <img class="bottom-header__logo" src="img/header/bottom-header/logo/logo-header.svg">
+        <nav class="bottom-header__navbar">
+          <ul class="bottom-header__nav-menu">
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Главная</a>
+            </li>
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Деканат</a>
+            </li>
+            <li class="bottom-header__nav-menu-item drop">
+              <a class="bottom-header__nav-menu-link">Факультет</a>
+              <img class="stroke-down" src="img/header/bottom-header/stroke/stroke-down.svg">
+              <img class="stroke-up" src="img/header/bottom-header/stroke/stroke-up.svg">
+              <!-- <div class="shodow"> -->
+              <!-- <div class="menu-dropdown"> -->
+
+              <div class="dropdown">
+                <div class="dropdown__content-left">
+                  <h1 class="dropdown__title">
+                    Факультет
+                  </h1>
+                  <p class="dropdown__text">
+                    Факультет единственный в Республике Беларусь
+                    осуществляет подготовку специалистов высшей
+                    квалификации
+                    для предприятий текстильной, швейной
+                    и обувной промышленности.
+                  </p>
+                  <img class="dropdown__img" src="img/header/bottom-header/img.png">
+                </div>
+                <div class="dropdown__content-middle">
+                  <a class="dropdown__link" href="">Кафедры</a>
+                  <a class="dropdown__link" href="">Специальности</a>
+                  <a class="dropdown__link" href="">Магистратура</a>
+                  <a class="dropdown__link" href="">Аспирантура</a>
+                  <a class="dropdown__link" href="">Научные школы</a>
+                </div>
+                <div class="dropdown__content-right">
+                  <p class="dropdown__text">
+                    Факультет производственных технологий основан 1
+                    февраля 2017 года на базе «Конструкторско-
+                    технологического факультета», организованного в
+                    июне 1987 года в результате слияния
+                    двух факультетов: «Швейного производства» и «Обувного
+                    производства».
+                  </p>
+                  <p class="dropdown__text">
+                    На факультете работают 85 преподавателей, в том
+                    числе: 6 докторов наук, профессоров, 48
+                    преподавателей имеют ученые степе-ни кандидата
+                    наук и звания доцента.
+                  </p>
+                  <div class="dropdown__elements">
+                    <div class="social-icon bottom-header__social-icon">
+                      <a class="social-icon__vk" href="https://vk.com/vstu_by">
+                        <img src="img/header/bottom-header/social-icon/vk.svg">
+                      </a>
+                      <a class="social-icon__instagram" href="https://www.instagram.com/vstu_vitebsk/">
+                        <img src="img/header/bottom-header/social-icon/instagram.svg">
+                      </a>
+                      <a class="social-icon__youtube" href="https://www.youtube.com/channel/UC5lAaVyyvZt_d-K17kjr3cg">
+                        <img src="img/header/bottom-header/social-icon/youtube.svg">
+                      </a>
+                    </div>
+                    <div class="language bottom-header__language">
+                      <input id="RU1" type="radio" name="bottom-header__language" checked>
+                      <label for="RU1">RU</label>
+                      <input id="BY1" type="radio" name="bottom-header__language">
+                      <label for="BY1">BY</label>
+                      <input id="EN1" type="radio" name="bottom-header__language">
+                      <label for="EN1">EN</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+            </li>
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Абитуриенту</a>
+              <img class="stroke-down" src="img/header/bottom-header/stroke/stroke-down.svg">
+              <img class="stroke-up" src="img/header/bottom-header/stroke/stroke-up.svg">
+            </li>
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Студенту</a>
+              <img class="stroke-down" src="img/header/bottom-header/stroke/stroke-down.svg">
+              <img class="stroke-up" src="img/header/bottom-header/stroke/stroke-up.svg">
+            </li>
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Новости</a>
+            </li>
+            <li class="bottom-header__nav-menu-item">
+              <a class="bottom-header__nav-menu-link">Медиа</a>
+              <img class="stroke-down" src="img/header/bottom-header/stroke/stroke-down.svg">
+              <img class="stroke-up" src="img/header/bottom-header/stroke/stroke-up.svg">
+            </li>
+          </ul>
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <img class="checked" src="img/header/bottom-header/burger/burger-menu.svg">
+            <img class="unchecked" src="img/header/bottom-header/burger/btn-close.svg">
+            <div class="burger-menu">
+              <!-- <div class="burger-menu__content"> -->
+              <div class="burger-menu__header">
+                <h1 class="burger-title">Меню</h1>
+                <a class="feedback-link" href="/">Форма обратной связи</a>
+              </div>
+              <div class="burger-menu__element">
+                <a class="burger-menu__element-link" href="/">Главная</a>
+              </div>
+              <div class="burger-menu__element">
+                <a class="burger-menu__element-link" href="/">Деканат</a>
+              </div>
+              <div class="burger-menu__element">
+                <input type="checkbox" id="element1" checked="false">
+                <label for="element1">
+                  Факультет
+                  <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
+                  <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
+                </label>
+                <div class="burger-menu-dropdown">
+                  <a href="/">Специальности</a>
+                  <a href="/">Кафедры</a>
+                  <a href="/">Деканат</a>
+                  <a href="/">Достижения</a>
+                  <a href="/">Доска почета</a>
+                </div>
+              </div>
+              <div class="burger-menu__element">
+                <input type="checkbox" id="element2" checked="false">
+                <label for="element2">
+                  Абитуриенту
+                  <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
+                  <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
+                </label>
+                <div class="burger-menu-dropdown">
+                  <a href="https://abiturient.vstu.by/ru/category/news/">Новости</a>
+                  <a href="https://abiturient.vstu.by/ru/category/podgotovka/">Подготовка</a>
+                  <a href="https://abiturient.vstu.by/ru/category/testirovanie/">Тестирование</a>
+                  <a href="https://abiturient.vstu.by/ru/category/postuplenie/">Поступление</a>
+                  <a href="https://abiturient.vstu.by/ru/kontakty/">Контакты</a>
+                </div>
+              </div>
+              <div class="burger-menu__element">
+                <input type="checkbox" id="element3" checked="false">
+                <label for="element3">
+                  Студенту
+                  <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
+                  <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
+                </label>
+                <div class="burger-menu-dropdown">
+                  <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
+                  <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почта</a>
+                  <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
+                  <a href="https://vstu.by/studentam-ru/ideologicheskaya-i-vospitatelnaya-rabota">Отдел воспитательной
+                    работы</a>
+                  <a href="https://ovr.vstu.by/socialno-psihologicheskaja-sluzhba/">Психологическая помощь</a>
+                  <a href="https://stud.vstu.by/">Студенческий клуб</a>
+                </div>
+              </div>
+              <div class="burger-menu__element">
+                <a class="burger-menu__element-link" href="/">Новости</a>
+              </div>
+              <div class="burger-menu__element">
+                <input type="checkbox" id="element5" checked="false">
+                <label for="element5">
+                  Медиа
+                  <img class="stroke-down" src="img/header/bottom-header/burger/stroke/stroke-down.svg">
+                  <img class="stroke-up" src="img/header/bottom-header/burger/stroke/stroke-up.svg">
+                </label>
+                <div class="burger-menu-dropdown">
+                  <a href="/">1 пункт</a>
+                  <a href="/">2 пункт</a>
+                  <a href="/">3 пункт</a>
+                </div>
+              </div>
+              <div class="burger-menu__footer">
+                <div class="social-icon burger__social-icon">
+                  <a class="social-icon__vk" href="https://vk.com/vstu_by">
+                    <img src="img/header/bottom-header/burger/social-icon/vk.svg">
+                  </a>
+                  <a class="social-icon__instagram" href="https://www.instagram.com/vstu_vitebsk/">
+                    <img src="img/header/bottom-header/burger/social-icon/instagram.svg">
+                  </a>
+                  <a class="social-icon__youtube" href="https://www.youtube.com/channel/UC5lAaVyyvZt_d-K17kjr3cg">
+                    <img src="img/header/bottom-header/burger/social-icon/youtube.svg">
+                  </a>
+                </div>
+                <div class="language burger__language">
+                  <input id="RU2" type="radio" name="burger__language" checked>
+                  <label for="RU2">RU</label>
+                  <input id="BY2" type="radio" name="burger__language">
+                  <label for="BY2">BY</label>
+                  <input id="EN2" type="radio" name="burger__language">
+                  <label for="EN2">EN</label>
+                </div>
+              </div>
+              <!-- </div> -->
+            </div>
+          </label>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+  <div class="shadow"></div>
+
+  <!-- <section class="splide" aria-labelledby="carousel-heading">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+      <li class="splide__slide"><img src="img/main/news/img.png"></li>
+    </ul>
+  </div>
+</section> -->
+
+
+  <main class="main">
+    <!--     <section class="top-main">
+      <img class="left-img" src="img/main/illustrations-left.svg">
+      <div class="container top-main__container">
+        <div class="slaider">
+          <h1 class="slider__header">
+            Заколовок слайдера
+          </h1>
+          <p class="slider__text">
+            Внезапно, действия представителей оппозиции,
+            взависимости от их уровня, должны быть призваны
+            к ответу, мы вынуждены отталкиваться от этого.
+          </p>
+          <section class="splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+                <li class="splide__slide"><img src="img/main/news/img.png"></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+      <img class="rigt-img" src="img/main/illustrations-right.svg">
+    </section> -->
+
+    <section class="bottom-main">
+      <div class="container bottom-main__container">
+        <div class="news">
+          <nav class="news__navbar">
+            <!-- <ul class="news__navbar-menu">
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Объявления</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link--activ" href="/">Новости</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Спортивные события</a></li>
+              <li class="news__navbar-menu-item"><a class="news__navbar-menu-link" href="/">Все новости</a></li>
+            </ul> -->
+
+            <input id="ads" type="radio" name="news__navbar-input">
+            <label class="news__navbar-item ads" for="ads">
+              <a class="news__navbar-link" href="/">Объявления</a>
+            </label>
+            <input id="news" type="radio" name="news__navbar-input" checked>
+            <label class="news__navbar-item m-news" for="news">
+              <a class="news__navbar-link" href="/">Новости</a>
+            </label>
+            <input id="sport" type="radio" name="news__navbar-input">
+            <label class="news__navbar-item sport" for="sport">
+              <a class="news__navbar-link" href="/">Спортивные события</a>
+            </label>
+            <input id="all-news" type="radio" name="news__navbar-input">
+            <label class="news__navbar-item all-news" for="all-news">
+              <a class="news__navbar-link" href="/">Все новости</a>
+            </label>
+
+          </nav>
+          <div class="news__contents">
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+            <div class="news__content">
+              <img class="news__img " src="img/main/news/img.png">
+              <div class="news__text">
+                <p class="news__text-date">15.07.2021</p>
+                <a class="news__text-header" href="#">
+                  Предварительная регистрация абитуриентов
+                </a>
+                <p class="news__text-preview">
+                  А ещё интерактивные прототипы могут быть
+                  превращены в посмешище, хотя само их
+                  существование приносит несомненную пользу.
+                </p>
+                <a class="news__text-more" href="/">
+                  Подробнеее
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lenta">
+          <div class="dean">
+              <h1 class="dean__header">
+                Томашева<br>
+                Рита Николаевна
+              </h1>
+              <p class="dean__text">
+                Декан факультета,<br>
+                кандидат технических наук,
+                доцент
+              </p>
+              <a class="dean__more" href="#">Подробнее</a>
+            <img src="img/main/lenta/dean.png" class="dean__img">
+          </div>
+          <div class="lenta__content">
+            <div class="events">
+              <h1 class="events__header">Мероприятия
+                <a class="events__more" href="#">Посмотреть все</a>
+              </h1>
+              <div class="event">
+                <div class="event__date">
+                  <p class="event__date-day">Ср</p>
+                  <p class="event__date-number">30</p>
+                  <p class="event__date-month">Сентября</p>
+                </div>
+                <p class="event__text">
+                  55-я Международная
+                  научно-техническая
+                  конференция...
+                  <a class="event__more" href="#">Подробнее</a>
+                </p>
+              </div>
+              <div class="event">
+                <div class="event__date">
+                  <p class="event__date-day">Вт</p>
+                  <p class="event__date-number">29</p>
+                  <p class="event__date-month">Сентября</p>
+                </div>
+                <p class="event__text">
+                  55-я Международная
+                  научно-техническая
+                  конференция...
+                  <a class="event__more" href="#">Подробнее</a>
+                </p>
+              </div>
+            </div>
+            <div class="video-block">
+              <h1 class="video-header">Текстиль - дело жизни</h1>
+              <video>
+                <source src="/">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </video>
+            </div>
+            <div class="news-vstu">
+              <h1 class="news-vstu__header">
+                <img src="img/main/lenta/icon_rss.svg">
+                Новости УО «ВГТУ»
+              </h1>
+              <div class="news-vstu__new">
+                <a class="news-vstu__new-link" href="#">
+                  В новый учебный год с новыми идеями
+                </a>
+                <p class="news-vstu__new-date">17.09.2021</p>
+              </div>
+              <div class="news-vstu__new">
+                <a class="news-vstu__new-link" href="#">
+                  День народного единства
+                </a>
+                <p class="news-vstu__new-date">17.09.2021</p>
+              </div>
+              <div class="news-vstu__new">
+                <a class="news-vstu__new-link" href="#">
+                  Республиканская выставка декоративно-
+                  прикладного искусства
+                </a>
+                <p class="news-vstu__new-date">17.09.2021</p>
+              </div>
+              <div class="news-vstu__new">
+                <a class="news-vstu__new-link" href="#">
+                  Республиканская выставка декоративно-
+                  прикладного искусства
+                </a>
+                <p class="news-vstu__new-date">17.09.2021</p>
+              </div>
+            </div>
+            <div class="contacts">
+              <h1 class="contacts__header">
+                Контакты факультета ФПТ
+              </h1>
+              <p class="contacts__text">
+                210 038, Беларусь, г. Витебск, Московский
+                пр., 72, Главный учебный корпус № 1, 4 этаж,
+                Зам. декана: по учебной работе — ауд. 420,
+                по воспитательной работе — ауд. 422
+              </p>
+              <p class="contacts__mail">
+                Почта: <a href="mail: fpt@vstu.by">fpt@vstu.by</a>
+              </p>
+              <p class="contacts__phone">
+                Телефон: <a href="+375212495354">+375 (212) 49-53-54</a>
+              </p>
+              <a class="contacts__feedback" href="#">Форма обратной связи</a>
+            </div>
+          </div>
+          <div class="lenta-slider">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="foot-main">
+      <div class="container foot-main__container">
+        <div class="foot-main__content">
+            <h1 class="foot-main__content-header">
+              Специальности — 2022
+            </h1>
+            <p class="foot-main__content-text">
+              Приятно, граждане, наблюдать, как независимые государства
+              подвергнуты целой серии независимых!
+            </p>
+        </div>
+        <img class="foot-main__img" src="img/main/foot/img.png">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="top-footer">
+      <div class="container top-footer__container">
+        <section class="top-section">
+          <div class="top-section__logo-address">
+            <img class="top-footer__logo" src="img/footer/top-footer/logo/logo-footer.svg">
+            <div class="address">
+              <div class="address__text">
+                210 038, Беларусь, г. Витебск, Московский
+                пр., 72, Главный учебный корпус № 1, 4 этаж,
+                Зам. декана: по учебной работе — ауд. 420,
+                по воспитательной работе — ауд. 422
+              </div>
+              <div class="address__phone-mail">
+                <div class="phone">
+                  <img src="img/footer/top-footer/phone.svg">
+                  <a href="tel:+375212495354">+375 (212) 49-53-54</a>
+                </div>
+                <div class="mail">
+                  <img src="img/footer/top-footer/mail.svg">
+                  <a href="mail:fpt@vstu.by">fpt@vstu.by</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-menu footer-menu__university">
+            <h1 class="footer-menu__title">Университет</h1>
+            <a class="footer-menu__link" href="https://vstu.by/universitet/rektorat">Ректорат</a>
+            <a class="footer-menu__link" href="https://vstu.by/universitet/fakultety">Факультеты</a>
+            <a class="footer-menu__link" href="https://vstu.by/incoming-ru">Абитуриентам</a>
+            <a class="footer-menu__link" href="https://vstu.by/studentam-ru/stoimost-obucheniya">Стоимость обучения</a>
+            <a class="footer-menu__link"
+              href="https://vstu.by/mezhdunarodnoe-sotrudnichestvo-ru/obuchenie-za-rubezhom">Обучение за рубежом</a>
+            <a class="footer-menu__link" href="https://nic.vstu.by/">Новости НИЧ</a>
+          </div>
+          <div class="footer-menu footer-menu__student">
+            <h1 class="footer-menu__title">Студенту</h1>
+            <a class="footer-menu__link" href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
+            <a class="footer-menu__link" href="https://vstu.by/studentam-ru/student-hall-fame">Доска почета</a>
+            <a class="footer-menu__link" href="https://cntr.vstu.by/">Центр развития карьеры</a>
+            <a class="footer-menu__link"
+              href="https://vstu.by/studentam-ru/ideologicheskaya-i-vospitatelnaya-rabota">Отдел воспитательной
+              работы</a>
+            <a class="footer-menu__link" href="https://ovr.vstu.by/socialno-psihologicheskaja-sluzhba/">Психологическая
+              помощь</a>
+            <a class="footer-menu__link" href="https://stud.vstu.by/">Студенческий клуб</a>
+          </div>
+          <div class="footer-menu footer-menu__enrollee">
+            <h1 class="footer-menu__title">Абитуриенту</h1>
+            <a class="footer-menu__link" href="https://abiturient.vstu.by/ru/category/news/">Новости</a>
+            <a class="footer-menu__link" href="https://abiturient.vstu.by/ru/category/podgotovka/">Подготовка</a>
+            <a class="footer-menu__link" href="https://abiturient.vstu.by/ru/category/testirovanie/">Тестирование</a>
+            <a class="footer-menu__link" href="https://abiturient.vstu.by/ru/category/postuplenie/">Поступление</a>
+            <a class="footer-menu__link" href="https://abiturient.vstu.by/ru/kontakty/">Контакты</a>
+          </div>
+          <div class="footer-adaptiv">
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu1" checked="false">
+              <label for="menu1">
+                Университет
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <a href="https://vstu.by/universitet/rektorat">Ректорат</a>
+                <a href="https://vstu.by/universitet/fakultety">Факультеты</a>
+                <a href="https://vstu.by/incoming-ru">Абитуриентам</a>
+                <a href="https://vstu.by/studentam-ru/stoimost-obucheniya">Стоимость обучения</a>
+                <a href="https://vstu.by/mezhdunarodnoe-sotrudnichestvo-ru/obuchenie-za-rubezhom">Обучение за
+                  рубежом</a>
+                <a href="https://nic.vstu.by/">Новости НИЧ</a>
+              </div>
+            </div>
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu2" checked="false">
+              <label for="menu2">
+                Студенту
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <a href="https://vstu.by/studentam-ru/raspisanie">Расписание</a>
+                <a href="https://vstu.by/studentam-ru/student-hall-fame">Доска почета</a>
+                <a href="https://cntr.vstu.by/">Центр развития карьеры</a>
+                <a href="https://vstu.by/studentam-ru/ideologicheskaya-i-vospitatelnaya-rabota">Отдел воспитательной
+                  работы</a>
+                <a href="https://ovr.vstu.by/socialno-psihologicheskaja-sluzhba/">Психологическая помощь</a>
+                <a href="https://stud.vstu.by/">Студенческий клуб</a>
+              </div>
+            </div>
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu3" checked="false">
+              <label for="menu3">
+                Абитуриенту
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <a href="https://abiturient.vstu.by/ru/category/news/">Новости</a>
+                <a href="https://abiturient.vstu.by/ru/category/podgotovka/">Подготовка</a>
+                <a href="https://abiturient.vstu.by/ru/category/testirovanie/">Тестирование</a>
+                <a href="https://abiturient.vstu.by/ru/category/postuplenie/">Поступление</a>
+                <a href="https://abiturient.vstu.by/ru/kontakty/">Контакты</a>
+              </div>
+            </div>
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu4" checked="false">
+              <label for="menu4">
+                Главный корпу
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <p>210035, Республика Беларусь, г. Витебск,<br>Московский пр., 72, Главный корпус №1</p>
+                <a class="phoneNumber" href="https://vstu.by/kontakty/phone-book">Телефонный справочник</a>
+                <p><a href="mail:vstu@vstu.by">vstu@vstu.by</a></p>
+              </div>
+            </div>
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu5" checked="false">
+              <label for="menu5">
+                Приемная коммисия
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <p>
+                  210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,
+                </p>
+                <p>+375 (212) 49-53-71, 49-53-53</p>
+                <p><a href="http://priem.vstu.by/">priem.vstu.by</a></p>
+              </div>
+            </div>
+            <div class="footer-adaptiv__menu">
+              <input type="checkbox" id="menu6" checked="false">
+              <label for="menu6">
+                Библиотека УО «ВГТУ»
+                <img class="stroke-down" src="img/footer/top-footer/stroke/stroke-down.svg">
+                <img class="stroke-up" src="img/footer/top-footer/stroke/stroke-up.svg">
+              </label>
+              <div class="dropdown-footer">
+                <p>210035, Республика Беларусь,<br>г. Витебск, Московский пр., 72,</p>
+                <p>+375 (212) 49-53-86</p>
+                <p><a href="https://library.vstu.by/">library.vstu.by</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="delimiter"><img src="img/footer/top-footer/delimiter/footer-delimiter.svg"></div>
+
+        <section class="middle-section">
+          <div class="footer-menu footer-menu__main-building">
+            <h1 class="footer-menu__title">Главный корпус</h1>
+            <p class="footer-menu__text">
+              210035, Республика Беларусь, г. Витебск, Московский пр., 72, Главный корпус№1
+            </p>
+            <a class="footer-menu__phonebook" href="https://vstu.by/kontakty/phone-book">Телефонный справочник</a>
+            <a class="footer-menu__mail" href="mail:vstu@vstu.by">vstu@vstu.by</a>
+          </div>
+          <div class="footer-menu footer-menu__selection-committee">
+            <h1 class="footer-menu__title">Приемная комиссия</h1>
+            <p class="footer-menu__text">
+              210035, Республика Беларусь, г. Витебск, Московский пр., 72,
+            </p>
+            <a class="footer-menu__phone" href="tel:+375212495371">+375 (212) 49-53-71, 49-53-53</a>
+            <a class="footer-menu__link" href="priem.vstu.by">priem.vstu.by</a>
+          </div>
+          <div class="footer-menu footer-menu__library-vstu">
+            <h1 class="footer-menu__title">Библиотека УО «ВГТУ»</h1>
+            <p class="footer-menu__text">
+              210035, Республика Беларусь, г. Витебск, Московский пр., 72,
+            </p>
+            <a class="footer-menu__phone" href="tel:+375212495386">+375 (212) 49-53-86</a>
+            <a class="footer-menu__link" href="library.vstu.by">library.vstu.by</a>
+          </div>
+          <div class="copyright">
+            Copyright © 2022 | Факультет производственных технологий
+            Разработка сайта — Центр информационных технологий
+            Техническая поддержка
+            сайта — cit.vstu.by
+          </div>
+        </section>
+
+        <div class="delimiter"><img src="img/footer/top-footer/delimiter/footer-delimiter.svg"></div>
+
+        <section class="bottom-section">
+          <div class="social-icon top-footer__social-icon">
+            <a class="social-icon__vk" href="https://vk.com/vstu_by">
+              <img src="img/footer/top-footer/social-icon/vk.svg">
+            </a>
+            <a class="social-icon__instagram" href="https://www.instagram.com/vstu_vitebsk/">
+              <img src="img/footer/top-footer/social-icon/instagram.svg">
+            </a>
+            <a class="social-icon__youtube" href="https://www.youtube.com/channel/UC5lAaVyyvZt_d-K17kjr3cg">
+              <img src="img/footer/top-footer/social-icon/youtube.svg">
+            </a>
+          </div>
+          <div class="language top-footer__language">
+            <input id="RU3" type="radio" name="top-footer__language" checked>
+            <label for="RU3">RU</label>
+            <input id="BY3" type="radio" name="top-footer__language">
+            <label for="BY3">BY</label>
+            <input id="EN3" type="radio" name="top-footer__language">
+            <label for="EN3">EN</label>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="bottom-footer">
+      <div class="container bottom-footer__container">
+        <a class="bottom-footer__link" href="https://www.abiturient.by/">
+          <img class="boottom-footer__img" src="img/footer/bottom-footer/1.png">
+        </a>
+        <a class="bottom-footer__link" href="https://president.gov.by/ru">
+          <img class="boottom-footer__img" src="img/footer/bottom-footer/2.png">
+        </a>
+        <a class="bottom-footer__link" href="https://edu.gov.by/">
+          <img class="boottom-footer__img" src="img/footer/bottom-footer/3.png">
+        </a>
+        <a class="bottom-footer__link" href="https://pravo.by/novosti/infografika-prava/tematicheskaya-infografika/">
+          <img class="boottom-footer__img" src="img/footer/bottom-footer/4.png">
+        </a>
+        <a class="bottom-footer__link" href="http://качество-услуг.бел">
+          <img class="boottom-footer__img" src="img/footer/bottom-footer/5.png">
+        </a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+  <script src="libs/splide-4.0.6/dist/js/splide.min.js"></script>
+</body>
+
+</html>
