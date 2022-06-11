@@ -3,8 +3,99 @@
 <div class="shadow"></div>
 
 <main class="main">
-  <!--     <section class="top-main">
-    </section> -->
+  <section class="top-main">
+    <div class="left-img">
+      <img src="<?php bloginfo('template_url'); ?>/app/img/main/illustrations-left.svg">
+
+    </div>
+    <div class="right-img">
+      <img src="<?php bloginfo('template_url'); ?>/app/img/main/illustrations-right.svg">
+    </div>
+    <div class="container top-main__container">
+      <div class="top-main__slider">
+        <div class="top-main__slider-item">
+          <div class="top-main__slider-content">
+            <h1 class="top-main__slider-title">
+              Заголовок слайдера
+            </h1>
+            <p class="top-main__slider-text">
+              Внезапно, действия представителей оппозиции,
+              взависимости от их уровня, должны быть призваны
+              к ответу, мы вынуждены отталкиваться от этого.
+            </p>
+            <button class="top-main__slider-btn" type="button">
+              <a class="top-main__slider-btn-link" href="#">
+                Подробнее
+              </a>
+            </button>
+          </div>
+          <div class="top-main__slider-img">
+            <img src="<?php bloginfo('template_url'); ?>/app/img/main/slider/img.png">
+          </div>
+        </div>
+        <div class="top-main__slider-item">
+          <div class="top-main__slider-content">
+            <h1 class="top-main__slider-title">
+              Заголовок слайдера
+            </h1>
+            <p class="top-main__slider-text">
+              Внезапно, действия представителей оппозиции,
+              взависимости от их уровня, должны быть призваны
+              к ответу, мы вынуждены отталкиваться от этого.
+            </p>
+            <button class="top-main__slider-btn" type="button">
+              <a class="top-main__slider-btn-link" href="#">
+                Подробнее
+              </a>
+            </button>
+          </div>
+          <div class="top-main__slider-img">
+            <img src="<?php bloginfo('template_url'); ?>/app/img/main/slider/img.png">
+          </div>
+        </div>
+        <div class="top-main__slider-item">
+          <div class="top-main__slider-content">
+            <h1 class="top-main__slider-title">
+              Заголовок слайдера
+            </h1>
+            <p class="top-main__slider-text">
+              Внезапно, действия представителей оппозиции,
+              взависимости от их уровня, должны быть призваны
+              к ответу, мы вынуждены отталкиваться от этого.
+            </p>
+            <button class="top-main__slider-btn" type="button">
+              <a class="top-main__slider-btn-link" href="#">
+                Подробнее
+              </a>
+            </button>
+          </div>
+          <div class="top-main__slider-img">
+            <img src="<?php bloginfo('template_url'); ?>/app/img/main/slider/img.png">
+          </div>
+        </div>
+        <div class="top-main__slider-item">
+          <div class="top-main__slider-content">
+            <h1 class="top-main__slider-title">
+              Заголовок слайдера
+            </h1>
+            <p class="top-main__slider-text">
+              Внезапно, действия представителей оппозиции,
+              взависимости от их уровня, должны быть призваны
+              к ответу, мы вынуждены отталкиваться от этого.
+            </p>
+            <button class="top-main__slider-btn" type="button">
+              <a class="top-main__slider-btn-link" href="#">
+                Подробнее
+              </a>
+            </button>
+          </div>
+          <div class="top-main__slider-img">
+            <img src="<?php bloginfo('template_url'); ?>/app/img/main/slider/img.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="bottom-main">
     <div class="container bottom-main__container">

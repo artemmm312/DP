@@ -6,7 +6,7 @@ jQuery(function () {
   $(".drop").on("mouseleave", () => $('.shadow').hide());
   $(".dropdown").on("mouseenter", () => $('.shadow').show());
   $(".dropdown").on("mouseleave", () => $('.shadow').hide());
-  $("#burger").on('change', function ( ) {
+  $("#burger").on('change', function () {
     if (this.checked) {
       $('.shadow').show();
     } else {
@@ -15,26 +15,13 @@ jQuery(function () {
   });
 
 
-
-/*   new Splide('.splide', {
-    type: 'loop',
-    perPage: 1,
-    speed: 1000,
+  $('.top-main__slider').slick({
     arrows: false,
-    autoplay: true,
-    interval: 5000,
-    pauseOnHover: true,
-  }).mount(); */
+    dots: true,
+    //appendDots: $('.top-main__slider-content'),
+  });
 
-
-
-/*   $(window).resize(function () {
-    $('#wrapper').css({
-      'height': ($(document).height()) + 'px'
-    });
-    alert('hello');
-  }); */
-
+  //$('.top-main__slider').slick('setPosition');
 
   var options = {
     year: 'numeric',

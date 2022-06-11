@@ -4,22 +4,22 @@
       font-size: 14px;
       line-height: 16px;
     }
-  }
 
-  .bottom-header {
-    font-size: 16px;
-    line-height: 19px;
-  }
-}
-
-.footer {
-  .top-footer {
-    .top-section {
-      gap: 20px;
+    .bottom-header {
+      font-size: 16px;
+      line-height: 19px;
     }
+  }
 
-    .middle-section {
-      gap: 35px;
+  .footer {
+    .top-footer {
+      .top-section {
+        gap: 20px;
+      }
+
+      .middle-section {
+        gap: 35px;
+      }
     }
   }
 }

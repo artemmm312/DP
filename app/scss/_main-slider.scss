@@ -1,0 +1,136 @@
+/* Слайдер */
+.slick-slider {
+  //display: flex;
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+  //position: absolute;
+  //top: 50%;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  //left: 0;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  //right: 0;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {
+  //display: flex;
+}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+.top-main {
+  &__slider {
+    position: relative;
+
+    .slick-dots {
+      position: absolute;
+      bottom: 100px;
+      left: 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0;
+      margin-top: 100px;
+    }
+
+    .slick-dots li {
+      list-style: none;
+    }
+
+    .slick-dots button {
+      width: 35px;
+      height: 2px;
+      font-size: 0;
+      background: #e6e6e6;
+      border: none;
+      border-radius: 1px;
+    }
+
+    .slick-dots li.slick-active button {
+      width: 35px;
+      height: 6px;
+      background: #8a2be2;
+      border-radius: 7px;
+    }
+
+    &-item {
+      /* .slick-dots {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+        margin-top: 100px;
+      }
+
+      .slick-dots li {
+        list-style: none;
+      }
+
+      .slick-dots button {
+        width: 35px;
+        height: 2px;
+        font-size: 0;
+        background: #e6e6e6;
+        border: none;
+        border-radius: 1px;
+      }
+
+      .slick-dots li.slick-active button {
+        width: 35px;
+        height: 6px;
+        background: #8a2be2;
+        border-radius: 7px;
+      } */
+    }
+  }
+}
