@@ -80,7 +80,7 @@ a {
 
 /* Home */
 .main {
-  //flex: 1 0 auto;
+  /* flex: 1 0 auto; */
 
   .top-main {
     position: relative;
@@ -188,17 +188,13 @@ a {
         justify-content: flex-end;
         overflow: hidden;
 
+        /* stylelint-disable-next-line no-descending-specificity */
         img {
           width: auto;
           height: 100%;
         }
       }
     }
-
-    /*     .left-img,
-    .right-img {
-      overflow: hidden;
-    } */
   }
 
   .center-main {
@@ -313,6 +309,7 @@ a {
           color: $colorNavLink;
         }
 
+        /* stylelint-disable-next-line no-descending-specificity */
         a:hover {
           color: $colorMain;
         }
