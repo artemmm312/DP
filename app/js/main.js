@@ -23,6 +23,11 @@ jQuery(function () {
 
   //$('.top-main__slider').slick('setPosition');
 
+  $('.lenta-slider').slick({
+    arrows: false,
+    dots: true,
+  });
+
   var options = {
     year: 'numeric',
     month: 'long',

@@ -108,6 +108,67 @@
   </div>
 
   <div class="lenta-slider">
-
+    <div class="lenta-slider__item">
+      <div class="lenta-slider__item-content">
+        <h1 class="lenta-slider__item-header">
+          Наши достижения
+        </h1>
+        <p class="lenta-slider__item-text">
+          в рамках спецификации
+          современных идей
+        </p>
+        <a class="lenta-slider__item-more" href="">
+          Подробнее
+        </a>
+      </div>
+      <img class="lenta-slider__item-img" src="<?php bloginfo('template_url'); ?>/app/img/main/lenta/slider/img.png"
+        alt="">
+    </div>
+    <div class="lenta-slider__item">
+      <div class="lenta-slider__item-content">
+        <h1 class="lenta-slider__item-header">
+          Республиканский референдум
+        </h1>
+        <p class="lenta-slider__item-text">
+          от 20 января 2022
+        </p>
+        <a class="lenta-slider__item-more" href="">
+          Подробнее
+        </a>
+      </div>
+      <img class="lenta-slider__item-img" src="<?php bloginfo('template_url'); ?>/app/img/main/lenta/slider/img(1).png"
+        alt="">
+    </div>
+    <div class="lenta-slider__item">
+      <div class="lenta-slider__item-content">
+        <h1 class="lenta-slider__item-header">
+          Наши достижения
+        </h1>
+        <p class="lenta-slider__item-text">
+          в рамках спецификации
+          современных идей
+        </p>
+        <a class="lenta-slider__item-more" href="">
+          Подробнее
+        </a>
+      </div>
+      <img class="lenta-slider__item-img" src="<?php bloginfo('template_url'); ?>/app/img/main/lenta/slider/img.png"
+        alt="">
+    </div>
+    <div class="lenta-slider__item">
+      <div class="lenta-slider__item-content">
+        <h1 class="lenta-slider__item-header">
+          Республиканский референдум
+        </h1>
+        <p class="lenta-slider__item-text">
+          от 20 января 2022
+        </p>
+        <a class="lenta-slider__item-more" href="">
+          Подробнее
+        </a>
+      </div>
+      <img class="lenta-slider__item-img" src="<?php bloginfo('template_url'); ?>/app/img/main/lenta/slider/img(1).png"
+        alt="">
+    </div>
   </div>
 </div>
